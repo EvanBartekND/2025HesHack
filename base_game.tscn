@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://mbfar8tssds6"]
+[gd_scene load_steps=9 format=3 uid="uid://mbfar8tssds6"]
 
-[ext_resource type="PackedScene" uid="uid://c16d7nl71sql7" path="res://event.tscn" id="1_43p3q"]
+[ext_resource type="PackedScene" uid="uid://dhgpyn6a71lt5" path="res://event.tscn" id="1_43p3q"]
+[ext_resource type="Texture2D" uid="uid://c2y2b3xf8yc6k" path="res://openart-image_iVugJtu6_1743815560811_raw.jpg" id="1_fu52h"]
+[ext_resource type="Texture2D" uid="uid://blqvk4dnmxas8" path="res://pixel-art-american-native-character-2-png.webp" id="2_sxekd"]
+[ext_resource type="Texture2D" uid="uid://cogx1o433spw7" path="res://64629c0ba19e223.png" id="3_18bpq"]
+[ext_resource type="Texture2D" uid="uid://cc6r5w5y35880" path="res://08349536e639b9fbe8462ac73b44b4db.png" id="4_ae6so"]
+[ext_resource type="Texture2D" uid="uid://copiip4euafpu" path="res://back-to-face-to-face-learning-student-front-school-flat-design-character-png.webp" id="5_4ibuw"]
+[ext_resource type="Texture2D" uid="uid://33ygsec4bpc0" path="res://R.png" id="6_hj3g8"]
+[ext_resource type="Texture2D" uid="uid://bbamtis8k5m1a" path="res://9e403ad52b233fe.png" id="7_5ip5v"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -8,6 +15,47 @@
 
 [node name="background" type="Node2D" parent="."]
 
+[node name="TextureRect" type="TextureRect" parent="background"]
+offset_right = 116.0
+offset_bottom = 155.0
+
+[node name="Openart-imageIVugJtu61743815560811Raw" type="Sprite2D" parent="background"]
+position = Vector2(1, 11)
+scale = Vector2(1.13528, 0.609375)
+texture = ExtResource("1_fu52h")
+
 [node name="World" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="World"]
+position = Vector2(-396, -110)
+scale = Vector2(0.254337, 0.245918)
+texture = ExtResource("2_sxekd")
+
+[node name="Sprite2D5" type="Sprite2D" parent="World"]
+position = Vector2(34, 55)
+scale = Vector2(0.160051, 0.192356)
+texture = ExtResource("3_18bpq")
+
+[node name="Sprite2D2" type="Sprite2D" parent="World"]
+position = Vector2(260.75, -101.75)
+scale = Vector2(0.204583, 0.170417)
+texture = ExtResource("4_ae6so")
+
+[node name="Sprite2D4" type="Sprite2D" parent="World"]
+position = Vector2(410, 70)
+scale = Vector2(0.3775, 0.43)
+texture = ExtResource("5_4ibuw")
+
+[node name="Sprite2D3" type="Sprite2D" parent="World"]
+position = Vector2(-9, -85)
+scale = Vector2(0.229688, 0.341176)
+texture = ExtResource("6_hj3g8")
+
+[node name="Sprite2D6" type="Sprite2D" parent="World"]
+
+[node name="Icon" type="Sprite2D" parent="World"]
+position = Vector2(-278, 58)
+scale = Vector2(0.191612, 0.221628)
+texture = ExtResource("7_5ip5v")
 
 [node name="Event" parent="." instance=ExtResource("1_43p3q")]
