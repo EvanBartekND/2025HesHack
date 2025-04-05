@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://mbfar8tssds6"]
 
 [ext_resource type="Script" uid="uid://dpbpkunbva37x" path="res://scripts/base_game.gd" id="1_jqnmv"]
-[ext_resource type="Texture2D" uid="uid://c2y2b3xf8yc6k" path="res://images/openart-image_iVugJtu6_1743815560811_raw.jpg" id="2_er7hg"]
+[ext_resource type="Texture2D" uid="uid://dokoleu8pjtxv" path="res://images/pixel_map.png" id="2_52buc"]
 [ext_resource type="Texture2D" uid="uid://blqvk4dnmxas8" path="res://images/pixel-art-american-native-character-2-png.webp" id="3_vn4j0"]
 [ext_resource type="Texture2D" uid="uid://cogx1o433spw7" path="res://images/64629c0ba19e223.png" id="4_08jd0"]
 [ext_resource type="Texture2D" uid="uid://cc6r5w5y35880" path="res://images/08349536e639b9fbe8462ac73b44b4db.png" id="5_rw2ch"]
@@ -26,7 +26,7 @@ offset_bottom = 155.0
 [node name="Openart-imageIVugJtu61743815560811Raw" type="Sprite2D" parent="background"]
 position = Vector2(-3.8147e-06, -5)
 scale = Vector2(1.17799, 0.632301)
-texture = ExtResource("2_er7hg")
+texture = ExtResource("2_52buc")
 
 [node name="World" type="Node2D" parent="."]
 
