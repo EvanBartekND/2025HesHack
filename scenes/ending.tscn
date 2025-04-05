@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dww53gq151hju"]
+
+[ext_resource type="Texture2D" uid="uid://cfbkl6ln73y2r" path="res://images/succes_screen.png" id="1_mqjok"]
+
+[node name="Ending" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 119.0
+offset_top = 169.0
+offset_right = 1530.0
+offset_bottom = 1193.0
+texture = ExtResource("1_mqjok")
