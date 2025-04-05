@@ -1,21 +1,19 @@
-[gd_scene load_steps=5 format=3 uid="uid://dhgpyn6a71lt5"]
+[gd_scene load_steps=5 format=3 uid="uid://c16d7nl71sql7"]
 
-[ext_resource type="Script" path="res://Event.gd" id="1_1jfrl"]
+[ext_resource type="Script" uid="uid://dpabh11g27drh" path="res://Event.gd" id="1_1jfrl"]
 [ext_resource type="Texture2D" uid="uid://cek7k4hpojguq" path="res://ChatGPT Image Apr 4, 2025, 10_46_52 PM.png" id="2_mri8j"]
-[ext_resource type="Theme" uid="uid://cw5fill304lb3" path="res://bttnThem.tres" id="2_w7201"]
+[ext_resource type="Theme" uid="uid://jy56klggq160" path="res://bttnThem.tres" id="2_w7201"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mri8j"]
 bg_color = Color(0.187429, 0.184708, 0.164095, 1)
 
 [node name="Event" type="Node2D"]
-visible = false
 script = ExtResource("1_1jfrl")
 
 [node name="Window" type="Window" parent="."]
 title = "Event!"
 initial_position = 1
 size = Vector2i(500, 500)
-visible = false
 
 [node name="backgrnd" type="Sprite2D" parent="Window"]
 position = Vector2(246.5, 246.5)
@@ -38,7 +36,6 @@ offset_bottom = 275.0
 color = Color(0.230315, 0.230315, 0.230315, 1)
 
 [node name="desc" type="RichTextLabel" parent="Window/ColorRect"]
-layout_mode = 0
 offset_left = -4.0
 offset_top = 21.0
 offset_right = 346.0
