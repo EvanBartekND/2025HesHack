@@ -1,13 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://by8xircs1tulp"]
+[gd_scene load_steps=6 format=3 uid="uid://by8xircs1tulp"]
 
 [ext_resource type="Script" uid="uid://dskbl7ah845bp" path="res://scripts/Minigame.gd" id="1_46t8l"]
 [ext_resource type="PackedScene" uid="uid://rcdes7rcbqdn" path="res://scenes/player.tscn" id="2_63po4"]
-
-[sub_resource type="QuadMesh" id="QuadMesh_j3703"]
-size = Vector2(1000, 100)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hd75n"]
-size = Vector2(355, 102)
+[ext_resource type="PackedScene" uid="uid://dfpvichamt58x" path="res://scenes/platform.tscn" id="3_le6bf"]
+[ext_resource type="Texture2D" uid="uid://do1sxtdoqtxy2" path="res://Assets/Background_2.png" id="4_joj68"]
+[ext_resource type="Texture2D" uid="uid://c1keh7428mtqw" path="res://Assets/Background_1.png" id="5_g5y0w"]
 
 [node name="Minigame" type="Node2D"]
 script = ExtResource("1_46t8l")
@@ -15,24 +12,42 @@ script = ExtResource("1_46t8l")
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_63po4")]
 position = Vector2(570, 282)
 
-[node name="platform" type="StaticBody2D" parent="."]
-position = Vector2(576, 472)
+[node name="platform" parent="." instance=ExtResource("3_le6bf")]
+position = Vector2(707, 471)
 
-[node name="MeshInstance2D" type="MeshInstance2D" parent="platform"]
-modulate = Color(0.196613, 0.501733, 1.92523e-07, 1)
-scale = Vector2(0.353, 1)
-mesh = SubResource("QuadMesh_j3703")
+[node name="platform2" parent="." instance=ExtResource("3_le6bf")]
+position = Vector2(1099, 442)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="platform"]
-shape = SubResource("RectangleShape2D_hd75n")
+[node name="platform3" parent="." instance=ExtResource("3_le6bf")]
+position = Vector2(952, 431)
 
-[node name="platform2" type="StaticBody2D" parent="."]
-position = Vector2(1741, 453)
+[node name="platform4" parent="." instance=ExtResource("3_le6bf")]
+position = Vector2(574, 437)
 
-[node name="MeshInstance2D" type="MeshInstance2D" parent="platform2"]
-modulate = Color(0.196613, 0.501733, 1.92523e-07, 1)
-mesh = SubResource("QuadMesh_j3703")
+[node name="platform5" parent="." instance=ExtResource("3_le6bf")]
+position = Vector2(827, 450)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="platform2"]
-position = Vector2(1.5, -1)
-shape = SubResource("RectangleShape2D_hd75n")
+[node name="platform6" parent="." instance=ExtResource("3_le6bf")]
+position = Vector2(1267, 448)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(6, 144)
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(1160, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(580.088, 178.5)
+scale = Vector2(2.37132, 2.37132)
+texture = ExtResource("4_joj68")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(6, 144)
+motion_scale = Vector2(0.3, 0.3)
+motion_mirroring = Vector2(1160, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(573.706, 183)
+scale = Vector2(2.34559, 2.34559)
+texture = ExtResource("5_g5y0w")
