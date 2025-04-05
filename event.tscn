@@ -1,11 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://c16d7nl71sql7"]
+[gd_scene load_steps=4 format=3 uid="uid://c16d7nl71sql7"]
 
-[ext_resource type="Script" uid="uid://dpabh11g27drh" path="res://Event.gd" id="1_1jfrl"]
+[ext_resource type="Script" path="res://Event.gd" id="1_1jfrl"]
 [ext_resource type="Texture2D" uid="uid://cek7k4hpojguq" path="res://ChatGPT Image Apr 4, 2025, 10_46_52 PM.png" id="2_mri8j"]
-[ext_resource type="Theme" uid="uid://jy56klggq160" path="res://bttnThem.tres" id="2_w7201"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mri8j"]
-bg_color = Color(0.187429, 0.184708, 0.164095, 1)
+[ext_resource type="Theme" uid="uid://csi2vfognbsw4" path="res://BttnTheme.tres" id="2_w7201"]
 
 [node name="Event" type="Node2D"]
 script = ExtResource("1_1jfrl")
@@ -26,7 +23,6 @@ offset_top = 30.0
 offset_right = 422.0
 offset_bottom = 70.0
 text = "Civil Unrest Has Lead to Rioting!"
-horizontal_alignment = 1
 
 [node name="ColorRect" type="ColorRect" parent="Window"]
 offset_left = 89.0
@@ -36,15 +32,14 @@ offset_bottom = 275.0
 color = Color(0.230315, 0.230315, 0.230315, 1)
 
 [node name="desc" type="RichTextLabel" parent="Window/ColorRect"]
+layout_mode = 0
 offset_left = -4.0
 offset_top = 21.0
 offset_right = 346.0
 offset_bottom = 192.0
-theme_override_styles/background = SubResource("StyleBoxFlat_mri8j")
 text = "frustration over lockdowns, economic hardship, and government response has sparked violent protests in major cities. Citizens are rioting, demanding change as tensions reach a breaking point. The crisis threatens to spiral unless action is taken.
 
 "
-horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="Window"]
 offset_left = 175.0
