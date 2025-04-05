@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://mbfar8tssds6"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="background" type="Node2D" parent="."]
+
+[node name="World" type="Node2D" parent="."]
