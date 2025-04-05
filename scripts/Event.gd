@@ -1,5 +1,6 @@
 extends Node2D
 @onready var popup = $Window
+signal eventResult
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,11 +15,14 @@ func _on_window_close_requested():
 
 
 func _on_button_pressed() -> void:
+	eventResult.emit(-10,5,0)
 	popup.hide() 
 
 func _on_button_2_pressed() -> void:
+	eventResult.emit(-40,-5,0)
 	popup.hide()
 
 
 func _on_button_3_pressed() -> void:
+	eventResult.emit(5,15,10)
 	popup.hide()

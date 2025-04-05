@@ -1,10 +1,26 @@
 extends Node2D
+class_name gameState
 var eventScn = load("res://scenes/event.tscn")
 var loopCounter = 0
+signal updateState
+
+@onready var happy: int = 0
+@onready var spread: int= 0
+@onready var infected: int = 0
+var dead = 0
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	updateStateVals(90,12,1)
+
+
+
+func updateStateVals(addHappy, addSpread, addInfected):
+	happy= happy+ addHappy
+	spread = spread+ addSpread
+	infected = infected+spread+addInfected
+	updateState.emit()
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
@@ -23,6 +39,7 @@ func _input(event: InputEvent) -> void:
 func spawnEvent():
 	var newEvent = eventScn.instantiate()
 	add_child(newEvent)
+	newEvent.eventResult.connect(updateStateVals.bind())
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
