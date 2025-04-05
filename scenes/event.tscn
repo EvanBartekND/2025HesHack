@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://c16d7nl71sql7"]
 
-[ext_resource type="Script" uid="uid://dxk2dma0107bg" path="res://scripts/Event.gd" id="1_3n6jn"]
+[ext_resource type="Script" path="res://scripts/Event.gd" id="1_3n6jn"]
 [ext_resource type="Texture2D" uid="uid://cek7k4hpojguq" path="res://images/ChatGPT Image Apr 4, 2025, 10_46_52 PM.png" id="2_bpv23"]
 [ext_resource type="Theme" uid="uid://csi2vfognbsw4" path="res://misc/BttnTheme.tres" id="3_f8kss"]
 
