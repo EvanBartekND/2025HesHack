@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://mbfar8tssds6"]
 
-[ext_resource type="Script" path="res://scripts/base_game.gd" id="1_jqnmv"]
+[ext_resource type="Script" uid="uid://dpbpkunbva37x" path="res://scripts/base_game.gd" id="1_jqnmv"]
 [ext_resource type="Texture2D" uid="uid://c2y2b3xf8yc6k" path="res://images/openart-image_iVugJtu6_1743815560811_raw.jpg" id="2_er7hg"]
 [ext_resource type="Texture2D" uid="uid://blqvk4dnmxas8" path="res://images/pixel-art-american-native-character-2-png.webp" id="3_vn4j0"]
 [ext_resource type="Texture2D" uid="uid://cogx1o433spw7" path="res://images/64629c0ba19e223.png" id="4_08jd0"]
@@ -8,9 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://copiip4euafpu" path="res://images/back-to-face-to-face-learning-student-front-school-flat-design-character-png.webp" id="6_dsfaa"]
 [ext_resource type="Texture2D" uid="uid://33ygsec4bpc0" path="res://images/R.png" id="7_o713g"]
 [ext_resource type="Texture2D" uid="uid://bbamtis8k5m1a" path="res://images/9e403ad52b233fe.png" id="8_r2472"]
-[ext_resource type="Script" path="res://scripts/popBar.gd" id="9_lrlfg"]
-[ext_resource type="Script" path="res://scripts/spreadBar.gd" id="10_nprgo"]
-[ext_resource type="Script" path="res://scripts/infectedBar.gd" id="11_cod5o"]
+[ext_resource type="Script" uid="uid://bkn4s8htqfwh8" path="res://scripts/popBar.gd" id="9_lrlfg"]
+[ext_resource type="Script" uid="uid://bys62lrqqd5x8" path="res://scripts/spreadBar.gd" id="10_nprgo"]
+[ext_resource type="Script" uid="uid://bc3161671qwhr" path="res://scripts/infectedBar.gd" id="11_cod5o"]
 
 [node name="overallGame" type="Node2D"]
 script = ExtResource("1_jqnmv")
