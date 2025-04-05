@@ -15,14 +15,14 @@ func _on_window_close_requested():
 
 
 func _on_button_pressed() -> void:
-	eventResult.emit(-10,5,0)
+	eventResult.emit(-10,3,0)
 	popup.hide() 
 
 func _on_button_2_pressed() -> void:
-	eventResult.emit(-40,-5,0)
+	eventResult.emit(-40,-1,0)
 	popup.hide()
 
 
 func _on_button_3_pressed() -> void:
-	eventResult.emit(5,15,10)
+	eventResult.emit(5,7,10)
 	popup.hide()
