@@ -1,11 +1,11 @@
 [gd_scene load_steps=4 format=3 uid="uid://c16d7nl71sql7"]
 
-[ext_resource type="Script" path="res://Event.gd" id="1_1jfrl"]
-[ext_resource type="Texture2D" uid="uid://cek7k4hpojguq" path="res://ChatGPT Image Apr 4, 2025, 10_46_52 PM.png" id="2_mri8j"]
-[ext_resource type="Theme" uid="uid://csi2vfognbsw4" path="res://BttnTheme.tres" id="2_w7201"]
+[ext_resource type="Script" path="res://scripts/Event.gd" id="1_3n6jn"]
+[ext_resource type="Texture2D" uid="uid://cek7k4hpojguq" path="res://images/ChatGPT Image Apr 4, 2025, 10_46_52 PM.png" id="2_bpv23"]
+[ext_resource type="Theme" uid="uid://csi2vfognbsw4" path="res://misc/BttnTheme.tres" id="3_f8kss"]
 
 [node name="Event" type="Node2D"]
-script = ExtResource("1_1jfrl")
+script = ExtResource("1_3n6jn")
 
 [node name="Window" type="Window" parent="."]
 title = "Event!"
@@ -15,7 +15,7 @@ size = Vector2i(500, 500)
 [node name="backgrnd" type="Sprite2D" parent="Window"]
 position = Vector2(246.5, 246.5)
 scale = Vector2(0.518555, 0.518555)
-texture = ExtResource("2_mri8j")
+texture = ExtResource("2_bpv23")
 
 [node name="header" type="RichTextLabel" parent="Window"]
 offset_left = 86.0
@@ -46,7 +46,7 @@ offset_left = 175.0
 offset_top = 313.0
 offset_right = 345.0
 offset_bottom = 348.0
-theme = ExtResource("2_w7201")
+theme = ExtResource("3_f8kss")
 text = "Send the local Police"
 
 [node name="Button2" type="Button" parent="Window"]
@@ -54,7 +54,7 @@ offset_left = 143.0
 offset_top = 369.0
 offset_right = 392.0
 offset_bottom = 404.0
-theme = ExtResource("2_w7201")
+theme = ExtResource("3_f8kss")
 text = "Send the international Military"
 
 [node name="Button3" type="Button" parent="Window"]
@@ -62,7 +62,7 @@ offset_left = 121.0
 offset_top = 432.0
 offset_right = 400.0
 offset_bottom = 467.0
-theme = ExtResource("2_w7201")
+theme = ExtResource("3_f8kss")
 text = "Let the people express themselves"
 
 [connection signal="close_requested" from="Window" to="." method="_on_window_close_requested"]

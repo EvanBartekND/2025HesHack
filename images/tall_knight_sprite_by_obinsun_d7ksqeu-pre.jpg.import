@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhd7lgjg3w8u4"
-path="res://.godot/imported/R (1).png-7b202845270089acf44a87881937d392.ctex"
+uid="uid://b084705tiojjr"
+path="res://.godot/imported/tall_knight_sprite_by_obinsun_d7ksqeu-pre.jpg-4eb3cb919671cd7b80efde81fbdc0d16.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://R (1).png"
-dest_files=["res://.godot/imported/R (1).png-7b202845270089acf44a87881937d392.ctex"]
+source_file="res://images/tall_knight_sprite_by_obinsun_d7ksqeu-pre.jpg"
+dest_files=["res://.godot/imported/tall_knight_sprite_by_obinsun_d7ksqeu-pre.jpg-4eb3cb919671cd7b80efde81fbdc0d16.ctex"]
 
 [params]
 

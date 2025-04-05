@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://06ji42wd785t"
-path="res://.godot/imported/GUI.png-f478c1ec4df8950d3094d6c76be3aa7c.ctex"
+uid="uid://blqvk4dnmxas8"
+path="res://.godot/imported/pixel-art-american-native-character-2-png.webp-3ba0e6132f08772c6ef335335c087047.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GUI.png"
-dest_files=["res://.godot/imported/GUI.png-f478c1ec4df8950d3094d6c76be3aa7c.ctex"]
+source_file="res://images/pixel-art-american-native-character-2-png.webp"
+dest_files=["res://.godot/imported/pixel-art-american-native-character-2-png.webp-3ba0e6132f08772c6ef335335c087047.ctex"]
 
 [params]
 

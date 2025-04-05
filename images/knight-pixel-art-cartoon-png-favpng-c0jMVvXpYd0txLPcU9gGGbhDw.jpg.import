@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://copiip4euafpu"
-path="res://.godot/imported/back-to-face-to-face-learning-student-front-school-flat-design-character-png.webp-3f81e87bc831750cb7d6a9dc9179f339.ctex"
+uid="uid://bcn42qfyt571p"
+path="res://.godot/imported/knight-pixel-art-cartoon-png-favpng-c0jMVvXpYd0txLPcU9gGGbhDw.jpg-81056e6ed4e4796ce9281822c65f602b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://back-to-face-to-face-learning-student-front-school-flat-design-character-png.webp"
-dest_files=["res://.godot/imported/back-to-face-to-face-learning-student-front-school-flat-design-character-png.webp-3f81e87bc831750cb7d6a9dc9179f339.ctex"]
+source_file="res://images/knight-pixel-art-cartoon-png-favpng-c0jMVvXpYd0txLPcU9gGGbhDw.jpg"
+dest_files=["res://.godot/imported/knight-pixel-art-cartoon-png-favpng-c0jMVvXpYd0txLPcU9gGGbhDw.jpg-81056e6ed4e4796ce9281822c65f602b.ctex"]
 
 [params]
 
