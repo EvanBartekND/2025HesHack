@@ -1,6 +1,7 @@
 extends Node2D
 class_name gameState
 var eventScn = load("res://scenes/event.tscn")
+var noticeScn = load("res://scenes/start_pop.tscn")
 var minigameScn = load("res://scenes/Minigame.tscn")
 var loopCounter = 0
 signal updateState
@@ -37,7 +38,8 @@ func _input(event: InputEvent) -> void:
 			loopCounter += 1
 
 func spawnNotice():
-	pass
+	var notice = noticeScn.instantiate()
+	add_child(notice)
 
 func startMinigame():
 	var minigame = minigameScn.instantiate()

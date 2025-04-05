@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4clr2ihapvm"]
+
+[ext_resource type="Script" uid="uid://dmu3mpkit3wwb" path="res://scripts/start_pop.gd" id="1_4dwbb"]
+[ext_resource type="Texture2D" uid="uid://d4h1ihd5aui5m" path="res://images/flask.png" id="2_vag56"]
+
+[node name="StartPop" type="Node2D"]
+script = ExtResource("1_4dwbb")
+
+[node name="Window" type="Window" parent="."]
+auto_translate_mode = 1
+title = "notic!"
+initial_position = 1
+size = Vector2i(500, 500)
+
+[node name="backgrnd" type="Sprite2D" parent="Window"]
+position = Vector2(246.5, 246.5)
+scale = Vector2(0.518555, 0.518555)
+texture = ExtResource("2_vag56")
+
+[node name="header" type="RichTextLabel" parent="Window"]
+offset_left = 85.0
+offset_top = 24.0
+offset_right = 421.0
+offset_bottom = 79.0
+text = "Congratulations! You have risen with the world and made an effective cure!"
+
+[node name="ColorRect" type="ColorRect" parent="Window"]
+offset_left = 84.0
+offset_top = 113.0
+offset_right = 423.0
+offset_bottom = 309.0
+color = Color(0.0495066, 0.247247, 0.362214, 1)
+
+[node name="desc" type="RichTextLabel" parent="Window/ColorRect"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 15.0
+offset_right = 359.0
+offset_bottom = 186.0
+text = "You have successfully come up with a cure. The next course of action is to distribute it to the world and save as many lives as possible. Hopefully, the countries of the world and the masses will cooperate with you. 
+
+"
+
+[connection signal="close_requested" from="Window" to="." method="_on_window_close_requested"]
