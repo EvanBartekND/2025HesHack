@@ -1,53 +1,158 @@
-[gd_scene load_steps=6 format=3 uid="uid://by8xircs1tulp"]
+[gd_scene load_steps=14 format=3 uid="uid://by8xircs1tulp"]
 
 [ext_resource type="Script" uid="uid://dskbl7ah845bp" path="res://scripts/Minigame.gd" id="1_46t8l"]
 [ext_resource type="PackedScene" uid="uid://rcdes7rcbqdn" path="res://scenes/player.tscn" id="2_63po4"]
 [ext_resource type="PackedScene" uid="uid://dfpvichamt58x" path="res://scenes/platform.tscn" id="3_le6bf"]
+[ext_resource type="Texture2D" uid="uid://duuijpaij5kg2" path="res://images/hospital.png" id="4_3iffi"]
 [ext_resource type="Texture2D" uid="uid://do1sxtdoqtxy2" path="res://Assets/Background_2.png" id="4_joj68"]
+[ext_resource type="Texture2D" uid="uid://c0ywe41w4rf65" path="res://images/lab.jpg" id="4_rvwkc"]
 [ext_resource type="Texture2D" uid="uid://c1keh7428mtqw" path="res://Assets/Background_1.png" id="5_g5y0w"]
+[ext_resource type="Script" uid="uid://df0q4tk835vm1" path="res://scripts/deathzone.gd" id="6_g5y0w"]
+[ext_resource type="Script" uid="uid://b8krpc3iyvmu6" path="res://scripts/checkpoint_manager.gd" id="7_fp0qn"]
+[ext_resource type="PackedScene" uid="uid://ggco6xdfqii4" path="res://scenes/checkpoint.tscn" id="8_8sil8"]
+[ext_resource type="Script" uid="uid://cvxappkdqqpi0" path="res://scripts/winZone.gd" id="11_640ea"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_joj68"]
+size = Vector2(6383, 244)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f1bl1"]
+size = Vector2(456, 238)
 
 [node name="Minigame" type="Node2D"]
 script = ExtResource("1_46t8l")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("2_63po4")]
-position = Vector2(570, 282)
-
-[node name="platform" parent="." instance=ExtResource("3_le6bf")]
-position = Vector2(707, 471)
-
-[node name="platform2" parent="." instance=ExtResource("3_le6bf")]
-position = Vector2(1099, 442)
-
-[node name="platform3" parent="." instance=ExtResource("3_le6bf")]
-position = Vector2(952, 431)
-
-[node name="platform4" parent="." instance=ExtResource("3_le6bf")]
-position = Vector2(574, 437)
-
-[node name="platform5" parent="." instance=ExtResource("3_le6bf")]
-position = Vector2(827, 450)
-
-[node name="platform6" parent="." instance=ExtResource("3_le6bf")]
-position = Vector2(1267, 448)
-
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(6, 144)
+position = Vector2(98, 177)
 motion_scale = Vector2(0.2, 0.2)
-motion_mirroring = Vector2(1160, 0)
+motion_mirroring = Vector2(1270, 710)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
-position = Vector2(580.088, 178.5)
-scale = Vector2(2.37132, 2.37132)
+position = Vector2(510.793, 140.5)
+scale = Vector2(2.65073, 2.65073)
 texture = ExtResource("4_joj68")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(6, 144)
+position = Vector2(98, 177)
 motion_scale = Vector2(0.3, 0.3)
-motion_mirroring = Vector2(1160, 0)
+motion_mirroring = Vector2(1270, 710)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(573.706, 183)
-scale = Vector2(2.34559, 2.34559)
+position = Vector2(508.059, 147)
+scale = Vector2(2.6103, 2.6103)
 texture = ExtResource("5_g5y0w")
+
+[node name="Hospital" type="Sprite2D" parent="."]
+position = Vector2(5946, 417)
+scale = Vector2(0.280344, 0.280344)
+texture = ExtResource("4_3iffi")
+
+[node name="Lab" type="Sprite2D" parent="."]
+position = Vector2(569, 347)
+scale = Vector2(0.26713, 0.26713)
+texture = ExtResource("4_rvwkc")
+
+[node name="platforms" type="Node2D" parent="."]
+
+[node name="platform" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(1490.29, 452.369)
+
+[node name="platform2" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(1040.44, 443.846)
+
+[node name="platform3" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(1699.65, 431.872)
+
+[node name="platform4" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(574, 437)
+
+[node name="platform5" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(827, 450)
+
+[node name="platform6" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(1287.18, 446.624)
+
+[node name="platform7" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(2851.29, 483.497)
+
+[node name="platform8" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(2401.44, 474.974)
+
+[node name="platform9" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(3060.65, 463)
+
+[node name="platform10" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(1935, 468.128)
+
+[node name="platform11" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(2188, 481.128)
+
+[node name="platform12" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(2648.18, 477.752)
+
+[node name="platform13" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(4118, 504)
+
+[node name="platform14" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(3608, 364)
+
+[node name="platform15" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(4466, 523)
+
+[node name="platform16" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(3250, 435)
+
+[node name="platform17" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(3452, 393)
+
+[node name="platform18" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(3849, 462)
+
+[node name="platform19" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(5544.29, 546.626)
+
+[node name="platform20" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(5094.44, 538.103)
+
+[node name="platform21" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(5753.65, 526.128)
+
+[node name="platform22" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(4628, 531.256)
+
+[node name="platform23" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(4881, 544.256)
+
+[node name="platform24" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(5341.17, 540.88)
+
+[node name="platform25" parent="platforms" instance=ExtResource("3_le6bf")]
+position = Vector2(4284, 514)
+
+[node name="player" parent="." groups=["player"] instance=ExtResource("2_63po4")]
+position = Vector2(545, 356)
+
+[node name="deathzone" type="Area2D" parent="."]
+script = ExtResource("6_g5y0w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="deathzone"]
+position = Vector2(3261.5, 772)
+shape = SubResource("RectangleShape2D_joj68")
+
+[node name="checkpointManager" type="Node2D" parent="."]
+script = ExtResource("7_fp0qn")
+
+[node name="checkpoint" parent="checkpointManager" instance=ExtResource("8_8sil8")]
+position = Vector2(549, 421)
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(5749.88, 482.859)
+script = ExtResource("11_640ea")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(274.124, -53.8595)
+shape = SubResource("RectangleShape2D_f1bl1")
+
+[connection signal="body_entered" from="deathzone" to="deathzone" method="_on_body_entered"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

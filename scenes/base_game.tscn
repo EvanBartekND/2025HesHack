@@ -24,8 +24,8 @@ offset_right = 116.0
 offset_bottom = 155.0
 
 [node name="Openart-imageIVugJtu61743815560811Raw" type="Sprite2D" parent="background"]
-position = Vector2(-3.8147e-06, -5)
-scale = Vector2(1.17799, 0.632301)
+position = Vector2(-3.8147e-06, 84.131)
+scale = Vector2(1.17799, 0.806385)
 texture = ExtResource("2_52buc")
 
 [node name="World" type="Node2D" parent="."]
@@ -36,22 +36,22 @@ scale = Vector2(0.254337, 0.245918)
 texture = ExtResource("3_vn4j0")
 
 [node name="Sprite2D5" type="Sprite2D" parent="World"]
-position = Vector2(34, 55)
+position = Vector2(85, 95)
 scale = Vector2(0.160051, 0.192356)
 texture = ExtResource("4_08jd0")
 
 [node name="Sprite2D2" type="Sprite2D" parent="World"]
-position = Vector2(260.75, -101.75)
+position = Vector2(284, -103)
 scale = Vector2(0.204583, 0.170417)
 texture = ExtResource("5_rw2ch")
 
 [node name="Sprite2D4" type="Sprite2D" parent="World"]
-position = Vector2(410, 70)
+position = Vector2(456, 122)
 scale = Vector2(0.3775, 0.43)
 texture = ExtResource("6_dsfaa")
 
 [node name="Sprite2D3" type="Sprite2D" parent="World"]
-position = Vector2(-24, -109)
+position = Vector2(22, -107)
 scale = Vector2(0.229688, 0.341176)
 texture = ExtResource("7_o713g")
 
