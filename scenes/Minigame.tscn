@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://by8xircs1tulp"]
+[gd_scene load_steps=16 format=3 uid="uid://by8xircs1tulp"]
 
 [ext_resource type="Script" uid="uid://dskbl7ah845bp" path="res://scripts/Minigame.gd" id="1_46t8l"]
 [ext_resource type="PackedScene" uid="uid://rcdes7rcbqdn" path="res://scenes/player.tscn" id="2_63po4"]
@@ -8,9 +8,11 @@
 [ext_resource type="Texture2D" uid="uid://c0ywe41w4rf65" path="res://images/lab.jpg" id="4_rvwkc"]
 [ext_resource type="Texture2D" uid="uid://c1keh7428mtqw" path="res://Assets/Background_1.png" id="5_g5y0w"]
 [ext_resource type="Script" uid="uid://df0q4tk835vm1" path="res://scripts/deathzone.gd" id="6_g5y0w"]
+[ext_resource type="Texture2D" uid="uid://cogx1o433spw7" path="res://images/64629c0ba19e223.png" id="7_4oyff"]
 [ext_resource type="Script" uid="uid://b8krpc3iyvmu6" path="res://scripts/checkpoint_manager.gd" id="7_fp0qn"]
 [ext_resource type="PackedScene" uid="uid://ggco6xdfqii4" path="res://scenes/checkpoint.tscn" id="8_8sil8"]
 [ext_resource type="Script" uid="uid://cvxappkdqqpi0" path="res://scripts/winZone.gd" id="11_640ea"]
+[ext_resource type="Texture2D" uid="uid://bk3dio5h0r8ju" path="res://images/Frisk_the_Human.webp" id="12_f1bl1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_joj68"]
 size = Vector2(6383, 244)
@@ -77,7 +79,8 @@ position = Vector2(1287.18, 446.624)
 position = Vector2(2851.29, 483.497)
 
 [node name="platform8" parent="platforms" instance=ExtResource("3_le6bf")]
-position = Vector2(2401.44, 474.974)
+position = Vector2(2411, 489)
+scale = Vector2(2, 2)
 
 [node name="platform9" parent="platforms" instance=ExtResource("3_le6bf")]
 position = Vector2(3060.65, 463)
@@ -108,6 +111,7 @@ position = Vector2(3452, 393)
 
 [node name="platform18" parent="platforms" instance=ExtResource("3_le6bf")]
 position = Vector2(3849, 462)
+scale = Vector2(2, 2)
 
 [node name="platform19" parent="platforms" instance=ExtResource("3_le6bf")]
 position = Vector2(5544.29, 546.626)
@@ -129,6 +133,11 @@ position = Vector2(5341.17, 540.88)
 
 [node name="platform25" parent="platforms" instance=ExtResource("3_le6bf")]
 position = Vector2(4284, 514)
+
+[node name="64629c0Ba19e223" type="Sprite2D" parent="platforms"]
+position = Vector2(2355, 439)
+scale = Vector2(0.0950169, 0.0950169)
+texture = ExtResource("7_4oyff")
 
 [node name="player" parent="." groups=["player"] instance=ExtResource("2_63po4")]
 position = Vector2(545, 356)
@@ -153,6 +162,11 @@ script = ExtResource("11_640ea")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(274.124, -53.8595)
 shape = SubResource("RectangleShape2D_f1bl1")
+
+[node name="FriskTheHuman" type="Sprite2D" parent="."]
+position = Vector2(3835, 409)
+scale = Vector2(0.193476, 0.193476)
+texture = ExtResource("12_f1bl1")
 
 [connection signal="body_entered" from="deathzone" to="deathzone" method="_on_body_entered"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
